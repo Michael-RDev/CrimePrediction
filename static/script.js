@@ -1,4 +1,4 @@
-const APIKEY = "AlFj1WPUAp_JGN-bCJA-lccEIHvHjL5SMJ0nFyaAH0jRn6xo34mQq21o2qSV-u4y";
+const APIKEY = "";
 const numPoints = 20;
 const radiusThreshold = 0.5;
 const baseUrl = "/api/predict";
