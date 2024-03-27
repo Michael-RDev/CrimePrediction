@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChiCrimeGo</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js"></script>
+    <script type="text/javascript" src="https://www.bing.com/api/maps/mapcontrol?callback=loadMapScenario" async defer></script>
+</head>
+<body class="body">
+    <header>
+        <h1>ChiCrimeGo(Crime Prediction - Chicago)</h1>
+    </header>
+    <main>
+        <div class="date-inputs">
+            <label for="start-date">Start Date:</label>
+            <input type="date" id="start-date" >
+            <label for="start-time">Start Time:</label>
+            <input type="time" id="start-time">
+
+            <label for="end-date">End Date:</label>
+            <input type="date" id="end-date">
+            <label for="end-time">End Time:</label>
+            <input type="time" id="end-time">
+            
+            <button onclick="generatePredictedCrimeMap()">Generate Predicted Crime Map</button>
+        </div>
+
+        <div id="map-container" class="map-container">
+            <div id="loading-screen" class="loading-screen">
+                <div class="loader"></div>
+                <p>Loading...</p>
+                
+                <div class="loading-bar-container">
+                    <div class="loading-bar"></div>
+                </div>
+            </div>
+            <div id="map" class="map"></div>
+            <button id="zoom-button">Zoom In</button>
+        </div>
+
+        <div id="crime-list">
+            <h2>Predicted Crimes</h2>
+            <table class="crime-table">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Time</th>
+                        <th>Location</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                        <th>Address</th>
+                    </tr>
+                </thead>
+                <tbody id="crime-table-body">
+                    <!-- Crime table rows will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>

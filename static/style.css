@@ -1,0 +1,211 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+}
+
+
+header {
+    text-align: center;
+    background-color: #3498db;
+    padding: 20px;
+    color: #fff;
+    margin-bottom: 35px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+main {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.date-inputs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.date-inputs label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.date-inputs input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.date-inputs button {
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.date-inputs button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+
+.map-container {
+    position: relative;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 16px 16px 20px rgba(0, 0, 0, 0.5);
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+.map {
+    height: 600px;
+    width: 100%;
+}
+
+.enlarged-map-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    z-index: 1000;
+    display: none; /* Initially hidden */
+}
+
+.enlarged-map {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height: 90%;
+}
+
+#zoom-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#zoom-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+
+
+.loading-bar {
+    width: 0;
+    height: 100%;
+    background-color: rgba(142, 210, 255, 0.7); /* Change the background color as needed */
+    transition: width 0.25s ease; /* Add smooth transition effect */
+    border-radius: 2px;
+}
+.loading-bar-container {
+    margin-top: 2px;
+    width: 90%;
+    height: 6px;
+    align-items: center;
+    background-color: rgba(80, 92, 111, 0.7); /* Change the background color as needed */
+    margin-top: 10px; /* Adjust margin as needed */
+    overflow: hidden; /* Hide overflow */
+    border-radius: 2px;
+}
+
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin-right: 5px;
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+#crime-list {
+    margin-top: 20px;
+}
+
+#crime-list h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.crime-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.crime-table th,
+.crime-table td {
+    padding: 12px;
+    text-align: left;
+}
+
+.crime-table th {
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+}
+
+
+.highlighted {
+    background-color: #c6dbea;/*yellow; /* Change to your desired highlight color */
+}
+
+.cell-button {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: #3498db; /* Light blue background color */
+    color: #fff; /* White text color */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition for background color */
+}
+
+.cell-button:hover {
+    background-color: #5da5f5; /* Lighter blue background color on hover */
+}
+  
+
