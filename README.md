@@ -10,6 +10,7 @@ This project aims to predict crime occurrences in Chicago using machine learning
 - [Model Inputs](#modelinputs)
 - [Modeling](#modeling)
 - [Evaluation](#evaluation)
+- [Setup](#setup)
 - [Deployment](#deployment)
 - [Contributing](#contributing)
 - [License](#license)
@@ -49,6 +50,75 @@ The performance of each model is evaluated using metrics such as:
 - Precision
 - Recall
 - F1-score
+
+## Setup
+
+### Building a Crime Visualization and Prediction Web Application
+
+Step 1: Download Dataset
+
+1) Visit the Chicago Data Portal2
+2) Download the dataset named "Crimes - 2001 to Present".
+3) Save the dataset in a folder named data within your project directory.
+
+Dataset Link: https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Present/ijzp-q8t2/data
+
+Step 2: Obtain Bing Maps API Key
+
+1) Go to the Bing Maps Dev Center website (https://www.microsoft.com/en-us/maps/choose-your-bing-maps-api).
+2) Sign in or create a Microsoft account if needed.
+3) Generate a new API key for your project.
+4) Keep the API key secure as it will be used to authenticate requests to the Bing Maps API.
+
+Step 3: Replace API Key in Script
+
+1) Clone the repository containing the project code.
+2) Navigate to the static folder within the project directory.
+3) Open the script.js file in a text editor.
+4) Find line 1 where it says const API_KEY = 'YOUR_API_KEY_HERE';.
+5) Replace 'YOUR_API_KEY_HERE' with your Bing Maps API key.
+6) Save the changes to script.js.
+
+Step 4: Environment Setup and Installation
+
+Open a terminal or command prompt.
+Navigate to the project directory.
+
+Create a virtual environment. 
+  * On Windows:
+       ```bash
+        python3 -m venv venv
+       .venv/Scripts/activate
+    ```
+  * On macOS/Linux:
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
+Install the required packages:
+```bash
+pip install -r requirements.txt
+```
+Step 5: Model Training
+
+1) Navigate to the training folder within the project directory.
+2) Open the Jupyter Notebook files (*.ipynb) for training the models.
+3) Follow the instructions within the notebooks to train the models using the downloaded dataset
+
+
+Step 6: Running the Server
+
+Go back to the root directory of the project.
+Execute the **server.py** script:
+```bash
+python server.py
+```
+
+Once the server is running without errors, open a web browser and navigate to (http://Your_IP:5050) to access the application
+
+Test all functionalities to ensure they work correctly
+
+
 
 ## Deployment
 The best-performing model will be deployed as a web application or API, allowing users to input various parameters and receive real-time crime predictions for different locations in Chicago.
