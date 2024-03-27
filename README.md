@@ -1,4 +1,4 @@
-# Chicago Crime Prediction
+# ChiCrimeGo
 
 ## Overview
 This project aims to predict crime occurrences in Chicago using machine learning techniques. By analyzing historical crime data along with various socio-economic and environmental factors, we aim to build a predictive model that can anticipate the likelihood of different types of crimes in different areas of Chicago.
@@ -7,8 +7,8 @@ This project aims to predict crime occurrences in Chicago using machine learning
 - [Background](#background)
 - [Data](#data)
 - [Methodology](#methodology)
-- [Model Inputs](#modelInputs)
-- [Modeling](#ModelInputs)
+- [Model Inputs](#modelinputs)
+- [Modeling](#modeling)
 - [Evaluation](#evaluation)
 - [Deployment](#deployment)
 - [Contributing](#contributing)
@@ -21,6 +21,9 @@ Crime prediction is a critical task for law enforcement agencies and urban plann
 The data used in this project consists of historical crime records obtained from the Chicago Police Department. Additionally, socio-economic data such as population demographics, income levels, education levels, and environmental factors like weather conditions, time of day, and geographic locations are incorporated to enrich the predictive model.
 
 ## Methodology
+
+Research Paper: https://arxiv.org/pdf/2303.16310.pdf
+
 1. **Data Collection**: Gather historical crime data from the Chicago Police Department and relevant socio-economic and environmental datasets.
 2. **Data Preprocessing**: Clean the data, handle missing values, and engineer features.
 3. **Feature Selection**: Identify significant features that contribute to crime prediction.
@@ -47,13 +50,8 @@ The performance of each model is evaluated using metrics such as:
 - Recall
 - F1-score
 
-Additionally, visualizations such as confusion matrices and ROC curves are used to assess model performance comprehensively.
-
 ## Deployment
 The best-performing model will be deployed as a web application or API, allowing users to input various parameters and receive real-time crime predictions for different locations in Chicago.
-
-## Contributing
-Contributions to this project are welcome. If you're interested in contributing, please follow the guidelines outlined in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
