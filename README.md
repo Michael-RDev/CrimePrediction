@@ -19,7 +19,7 @@ This project aims to predict crime occurrences in Chicago using machine learning
 Crime prediction is a critical task for law enforcement agencies and urban planners to allocate resources effectively and prevent criminal activities. Chicago, being one of the largest cities in the United States, faces various challenges related to crime, making it an ideal candidate for such predictive modeling efforts.
 
 ## Data
-The data used in this project consists of historical crime records obtained from the Chicago Police Department. Additionally, socio-economic data such as population demographics, income levels, education levels, and environmental factors like weather conditions, time of day, and geographic locations are incorporated to enrich the predictive model.
+The data used in this project consists of historical crime records obtained from the Chicago Police Department. 
 
 ## Methodology
 
